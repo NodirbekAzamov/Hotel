@@ -11,9 +11,9 @@ export default function App() {
         
       </div>
       <div className='app_right'>
-        {/* <Routes>
+        <Routes>
           <Route />
-        </Routes> */}
+        </Routes>
 
       </div>
     </div>
