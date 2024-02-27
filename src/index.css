@@ -4,10 +4,14 @@
 
 
 :root {
-  --text-white: #fff;
+  --white: #fff;
+  --black: #000;
   --bg-primary: #646cff;
   --bg-main: #e8e6e6;
 } 
 
+body {
+  background-color: var(--bg-main);
+}
 
 
