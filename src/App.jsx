@@ -10,9 +10,9 @@ export default function App() {
         <Sidebar />
       </div>
       <div className='app_right'>
-        <Routes>
+        {/* <Routes>
           <Route />
-        </Routes>
+        </Routes> */}
       </div>
     </div>
   )
