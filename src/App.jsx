@@ -10,6 +10,7 @@ export default function App() {
         <Sidebar />
       </div>
       <div className='app_right'>
+        <h1>salom dunyo</h1>
         {/* <Routes>
           <Route />
         </Routes> */}
