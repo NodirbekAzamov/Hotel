@@ -8,9 +8,9 @@ export default function App() {
     <div className=' app'>
       <div className='app_left'>
         <Sidebar />
+        
       </div>
       <div className='app_right'>
-        
         {/* <Routes>
           <Route />
         </Routes> */}

@@ -4,6 +4,8 @@ import "./sidebar.scss"
 export default function Sidebar() {
     const [components, setComponents] = useState([
         { id: 1, path: "bosh_sahifa", title: "Bosh Sahifa" },
+        { id: 2, path: "honalar", title: "Honalar" },
+        { id: 3, path: "hodimlar", title: "Hodimlar" },
         { id: 2, path: "honalar", title: "Xonalar" },
         { id: 3, path: "hodimlar", title: "Xodimlar" },
         { id: 4, path: "mehmonlar", title: "Mehmonlar" },
