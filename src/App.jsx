@@ -12,6 +12,7 @@ export default function App() {
         <Sidebar />
       </div>
       <div className='app_right'>
+
         <div className='nav'>
         <Navbar/>
         </div>
