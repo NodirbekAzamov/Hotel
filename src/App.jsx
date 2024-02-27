@@ -10,10 +10,9 @@ export default function App() {
         <Sidebar />
       </div>
       <div className='app_right'>
-        <h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius repellat quaerat eligendi minus sit error, non nisi porro, numquam suscipit deleniti dignissimos fugiat aut animi odio perferendis, laboriosam quibusdam explicabo!</h1>
-        {/* <Routes>
+        <Routes>
           <Route />
-        </Routes> */}
+        </Routes>
       </div>
     </div>
   )
