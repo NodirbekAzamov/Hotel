@@ -6,6 +6,8 @@ export default function Sidebar() {
         { id: 1, path: "bosh_sahifa", title: "Bosh Sahifa" },
         { id: 2, path: "honalar", title: "Honalar" },
         { id: 3, path: "hodimlar", title: "Hodimlar" },
+        { id: 2, path: "honalar", title: "Xonalar" },
+        { id: 3, path: "hodimlar", title: "Xodimlar" },
         { id: 4, path: "mehmonlar", title: "Mehmonlar" },
         { id: 5, path: "tashkilotlar", title: "Tashkilotlat" },
         { id: 6, path: "sms", title: "SMS" },
