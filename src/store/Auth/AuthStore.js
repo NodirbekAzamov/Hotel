@@ -6,6 +6,7 @@ const useAuthStore = create((set) => ({
     login: async (payload) => {
         try {
             const response = await axiosClient.post("/Auth/login", {...payload})
+
             if(response?.data?.token){
                 localStorage.setItem("token", response?.data?.token)
             }
@@ -13,7 +14,6 @@ const useAuthStore = create((set) => ({
         } catch (err) {
             console.log(err);
         }
-
     }
 }))
 

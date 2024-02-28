@@ -5,6 +5,7 @@ import { FaRegEyeSlash } from "react-icons/fa6";
 import useAuthStore from '../../store/auth/AuthStore';
 
 const Auth = () => {
+
   const { login, status } = useAuthStore()
   const [email, setEmail] = useState("")
   const [password, setPassword] = useState("")
@@ -12,6 +13,7 @@ const Auth = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     await login({
+
       email: email,
       password: password,
     })
@@ -19,6 +21,7 @@ const Auth = () => {
       
     }
   }
+
   return (
     <div className='auth'>
       <h1>Login</h1>
@@ -27,6 +30,7 @@ const Auth = () => {
         <div className='auth_password'>
           <input
             onChange={(e) => setPassword(e.target.value)}
+
             type={type ? "text" : "password"}
             className=" passwords"
             placeholder="Password"
@@ -40,6 +44,7 @@ const Auth = () => {
             onClick={() => setType((prev) => !prev)}
           />
         </div>
+
         <button type='submit'>Login</button>
       </form>
     </div>
