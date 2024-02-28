@@ -11,7 +11,7 @@ import { useNavigate } from 'react-router-dom';
 
 const Auth = () => {
   const navigate = useNavigate()
-  const { login, status } = useAuthStore()
+  const { login } = useAuthStore()
   const [email, setEmail] = useState("")
   const [password, setPassword] = useState("")
 
@@ -22,6 +22,7 @@ const Auth = () => {
       email: email,
       password: password,
     });
+    const status = +sessionStorage.getItem("status")
     if (status === 200) {
       navigate("/main")
       window.location.reload();
