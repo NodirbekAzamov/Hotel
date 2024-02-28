@@ -3,9 +3,10 @@ import "./Auth.scss";
 import { FaRegEye } from "react-icons/fa6";
 import { FaRegEyeSlash } from "react-icons/fa6";
 import useAuthStore from '../../store/auth/AuthStore';
+import { useNavigate } from 'react-router-dom';
 
 const Auth = () => {
-
+  const navigate = useNavigate()
   const { login, status } = useAuthStore()
   const [email, setEmail] = useState("")
   const [password, setPassword] = useState("")
@@ -13,12 +14,12 @@ const Auth = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     await login({
-
       email: email,
       password: password,
     })
     if (status === 200) {
-      
+      navigate("/main")
+      window.location.reload();
     }
   }
 
