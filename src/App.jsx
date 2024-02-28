@@ -6,6 +6,7 @@ import Navbar from './components/navbar/Navbar'
 import Main from './pages/Main/Main'
 import Auth from './pages/Auth/Auth'
 import useRoomStore from './store/RoomStore/RoomStore'
+import Rooms from './pages/Rooms/Rooms'
 export default function App() {
 
   const url = window.location.href.split("/").pop()
@@ -21,12 +22,14 @@ export default function App() {
       </div>
       <div className={`${url === "" ? " m-0" : "ml-[250px]"} app_right`}>
 
-        <div className='nav'>
+        <div className='nav h-[82px]'>
           <Navbar />
         </div>
         <Routes>
           <Route path='/' element={<Auth />} />
           <Route path='main' element={<Main />} />
+          <Route path='xonalar' element={<Rooms />} />
+        
         </Routes>
 
       </div>

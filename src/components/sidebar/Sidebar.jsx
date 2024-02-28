@@ -10,6 +10,7 @@ import { HiOutlineBuildingOffice2 } from "react-icons/hi2";
 import { FaLock } from "react-icons/fa";
 import { FaRegUserCircle } from "react-icons/fa";
 import { GoChevronUp } from "react-icons/go";
+import { BiLogOut } from "react-icons/bi";
 
 
 export default function Sidebar() {
@@ -29,7 +30,7 @@ export default function Sidebar() {
     }
 
     return (
-        <aside className={`sidebar ${url === "" ? "hidden" : ""}`}>
+        <aside className={`sidebar ${url === "" ? "hidden" : "sidebar"}`}>
             <Link to="/" className='sidebar__logo'>
                 <img src={Hotel_img} alt="logo" />
             </Link>
@@ -48,9 +49,9 @@ export default function Sidebar() {
                 <h4>Shaxsiy sahifa</h4>
                 <h4>Parolni o'zgartirish</h4>
                 <hr />
-                <h4>Chiqish</h4>
+                <h4>Chiqish <BiLogOut className='text-[20px]'/></h4>
             </div>
-            <div onClick={changeBtn} className=" sidabar__footer" >
+            <div onClick={changeBtn} className="sidabar__footer" >
                 <button><FaLock /></button>
                 <button ><FaRegUserCircle className='text-[20px] font-[700]' /> Name <GoChevronUp className='text-[18px]' /></button>
             </div>

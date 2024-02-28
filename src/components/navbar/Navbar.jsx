@@ -10,7 +10,7 @@ const Navbar = () => {
     const url = window.location.href.split("/").pop()
 
   return (
-    <nav className={`navbar ${url === "" ? "hidden" : "" }`}>
+    <nav className={`navbar ${url === "" ? "hidden" : "navbar" }`}>
       <div className="navbar__item">
         <input type="text" className="navbar__search" placeholder="Search..." />
         <div className="navbar__right">
