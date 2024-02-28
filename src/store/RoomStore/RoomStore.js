@@ -7,6 +7,7 @@ const useRoomStore = create((set)=>({
         const response = await axiosClient.get("/Guest/get-all-guests")
         set({rooms: [...response?.data]})
         console.log(response);
+        console.log(response);
     },
     
 }))
