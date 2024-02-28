@@ -7,8 +7,10 @@ const Navbar = () => {
     const [navbarPosition, setNavbarPosition] = useState(false)
     const [navbarCategory, setNavbarCategory] = useState(false)
     const [filterList, setFilterList] = useState(false)
+    const url = window.location.href.split("/").pop()
+
   return (
-    <nav className="navbar">
+    <nav className={`navbar ${url === "" ? "hidden" : "" }`}>
       <div className="navbar__item">
         <input type="text" className="navbar__search" placeholder="Search..." />
         <div className="navbar__right">
