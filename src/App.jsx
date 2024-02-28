@@ -22,7 +22,7 @@ export default function App() {
       </div>
       <div className={`${url === "" ? " m-0" : "ml-[250px]"} app_right`}>
 
-        <div className='nav h-[82px]'>
+        <div className={url === "" ? "h-[0]" : "h-[82px]"}>
           <Navbar />
         </div>
         <Routes>
