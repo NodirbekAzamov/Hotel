@@ -7,6 +7,10 @@ import { LiaDoorOpenSolid } from "react-icons/lia";
 import { AiOutlineUser } from "react-icons/ai";
 import { VscSmiley } from "react-icons/vsc";
 import { HiOutlineBuildingOffice2 } from "react-icons/hi2";
+import { FaLock } from "react-icons/fa";
+import { FaRegUserCircle } from "react-icons/fa";
+import { GoChevronUp } from "react-icons/go";
+
 
 export default function Sidebar() {
     const [components, setComponents] = useState([
@@ -18,6 +22,11 @@ export default function Sidebar() {
         { id: 6, icon: <MdHomeFilled />, active: "sms", path: "/sms", title: "SMS" },
     ])
     const url = window.location.href.split("/").pop()
+    const [btn_active, setBtn_active] = useState(false)
+
+    const changeBtn = () => {
+        setBtn_active(prev => !prev)
+    }
 
     return (
         <aside className={`sidebar ${url === "" ? "hidden" : ""}`}>
@@ -35,6 +44,16 @@ export default function Sidebar() {
                     })
                 }
             </ul>
+            <div className={`${btn_active  ? "sidebar__change" : " sidebar__change2"} sidebar_change3`}>
+                <h4>Shaxsiy sahifa</h4>
+                <h4>Parolni o'zgartirish</h4>
+                <hr />
+                <h4>Chiqish</h4>
+            </div>
+            <div onClick={changeBtn} className=" sidabar__footer" >
+                <button><FaLock /></button>
+                <button ><FaRegUserCircle className='text-[20px] font-[700]' /> Name <GoChevronUp className='text-[18px]' /></button>
+            </div>
         </aside>
     )
 }
