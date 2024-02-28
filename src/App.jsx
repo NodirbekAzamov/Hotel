@@ -21,8 +21,7 @@ export default function App() {
         <Sidebar />
       </div>
       <div className={`${url === "" ? " m-0" : "ml-[250px]"} app_right`}>
-
-        <div className='nav'>
+        <div className={url === "" ? "h-[0]" : "h-[82px]"}>
           <Navbar />
         </div>
         <Routes>
