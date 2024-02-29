@@ -15,7 +15,6 @@ export default function App() {
   useEffect(() => {
     getRooms()
   }, [])
-  console.log(url);
   return (
     <div className=' app'>
       <div className={`app_left ${url === "" ? "hidden" : ""}`}>
