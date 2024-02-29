@@ -1,0 +1,61 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.room {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    padding: 15px 50px;
+    border-radius: 50px;
+
+    .room__map {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        background-color: var(--white);
+        padding: 10px;
+
+        td {
+            text-align: start;
+        }
+
+        // td:nth-child(1) {
+        //     background-color: brown;
+        // }
+
+        .room_icon {
+            display: flex;
+            align-items: center;
+        }
+
+        .room_btn {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+
+            button {
+                display: flex;
+                align-items: center;
+                gap: 3px;
+                padding: 4px 7px;
+                border-radius: 5px;
+                background-color: var(--bg-primary);
+                color: #fff;
+                border: 1px solid var(--white);
+            }
+        }
+    }
+
+    .room__map:hover {
+        background-color: var(--bg-primary);
+        color: #fff;
+
+        .room_btn {
+            button {
+                border: 1px solid var(--white);
+            }
+        }
+    }
+}

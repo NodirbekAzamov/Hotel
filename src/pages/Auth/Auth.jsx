@@ -3,7 +3,7 @@ import "./Auth.scss";
 import { FaRegEye } from "react-icons/fa6";
 import { FaRegEyeSlash } from "react-icons/fa6";
 
-import useAuthStore from "../../store/auth/AuthStore";
+import useAuthStore from "../../store/Auth/AuthStore";
 import {  MdMail } from "react-icons/md";
 import { FaLock } from "react-icons/fa6";
 import { IoIosArrowForward } from "react-icons/io";
@@ -26,7 +26,6 @@ const Auth = () => {
     if (status === 200) {
       navigate("/main")
       window.location.reload();
-
     }
   };
 

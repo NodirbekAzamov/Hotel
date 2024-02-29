@@ -14,7 +14,7 @@ const Navbar = () => {
       <div className="navbar__item">
         <input type="text" className="navbar__search" placeholder="Search..." />
         <div className="navbar__right">
-          <button className="navbar__order">
+          <button className="navbar__order whitespace-nowrap">
             Zakaz berish <MdBorderColor />
           </button>
           <button className="navbar__filter-btn" onClick={()=>setFilterList(prev=> !prev)}>
