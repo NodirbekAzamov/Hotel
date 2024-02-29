@@ -7,6 +7,7 @@ import Main from './pages/Main/Main'
 import Auth from './pages/Auth/Auth'
 import useRoomStore from './store/RoomStore/RoomStore'
 import Rooms from './pages/Rooms/Rooms'
+import CreateAdmin from './pages/CreateAdmin/CreateAdmin'
 export default function App() {
 
   const url = window.location.href.split("/").pop()
@@ -28,7 +29,7 @@ export default function App() {
           <Route path='/' element={<Auth />} />
           <Route path='main' element={<Main />} />
           <Route path='xonalar' element={<Rooms />} />
-        
+          <Route path='create_admin' element={<CreateAdmin />} />
         </Routes>
 
       </div>
