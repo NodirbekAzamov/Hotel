@@ -7,6 +7,7 @@ const useRoomStore = create((set)=>({
     getRooms: async ()=> {
         const response = await axiosClient.get("/Room/get-all-rooms")
         set({rooms: [...response?.data]})
+        console.log(response);
     },
     getRoomStatus: async ()=> {
         const response = await axiosClient.get("/RoomStatus/get-all-rooms")

@@ -1,5 +1,5 @@
 import React from 'react'
-import CreateAdminStore from '../../store/CreateAdminStore'
+import CreateAdminStore from '../../store/CreateAdminStore/CreateAdminStore'
 
 const CreateAdmin = () => {
     const {createAdmin} = CreateAdminStore()

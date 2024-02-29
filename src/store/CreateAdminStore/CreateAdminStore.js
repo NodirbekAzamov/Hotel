@@ -1,5 +1,5 @@
 import { create } from "zustand";
-import axiosClient from "../plugins/axiosClient";
+import axiosClient from "../../plugins/axiosClient";
 
 const CreateAdminStore = create((set) => ({
     createAdmin: async (payload) => {
