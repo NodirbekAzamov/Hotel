@@ -7,7 +7,7 @@ export default function Rooms() {
     return (
         <div className='room'>
             <div>
-                <h6>101</h6>
+                <h6>102</h6>
                 <button>Band Etilgan</button>
                 <div className='room_icon'>
                     <RiUserLine />
