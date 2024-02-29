@@ -19,7 +19,7 @@ export default function Sidebar() {
         { id: 2, icon: <LiaDoorOpenSolid />, active: "xonalar", path: "/xonalar", title: "Xonalar" },
         { id: 3, icon: <AiOutlineUser />, active: "xodimlar", path: "/xodimlar", title: "Xodimlar" },
         { id: 4, icon: <VscSmiley />, active: "mehmonlar", path: "/mehmonlar", title: "Mehmonlar" },
-        { id: 5, icon: <HiOutlineBuildingOffice2 />, active: "tashkilotlar", path: "/tashkilotlar", title: "Tashkilotlat" },
+        { id: 5, icon: <HiOutlineBuildingOffice2 />, active: "tashkilotlar", path: "/tashkilotlar", title: "Tashkilotlar" },
         { id: 6, icon: <MdHomeFilled />, active: "sms", path: "/sms", title: "SMS" },
     ])
     const url = window.location.href.split("/").pop()
