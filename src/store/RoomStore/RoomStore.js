@@ -7,16 +7,17 @@ const useRoomStore = create((set) => ({
     getRooms: async () => {
         const response = await axiosClient.get("/Room/get-all-rooms")
         set({ rooms: [...response?.data] })
-        console.log(response);
+        console.log(response, "rooms");
     },
+
     postRooms: async (payload) => {
         const response = await axiosClient.post("/Room/add-room", { ...payload });
     },
 
     getRoomStatus: async () => {
-        const response = await axiosClient.get("/RoomStatus/get-all-rooms")
+        const response = await axiosClient.get("/RoomType/get-all-roomtype")
         set({ roomStatus: [...response?.data] })
-        console.log(response);
+        console.log(response, "RoomStatus");
     },
 
 }))
